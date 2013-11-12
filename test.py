@@ -10,7 +10,7 @@ import pynotify
 
 # инициализация приложения
 def Init():
-	vk=vkontakte.API('2771205','8T8ZEkrCSnSB4Ot67PCm')
+	vk=vkontakte.API('##id##','###token####')
 	return vk
 def IsOnline(uid):  #берем ID нужного пользователя
 	online=vk.get('getProfiles',uids=uid,fileds='online')
